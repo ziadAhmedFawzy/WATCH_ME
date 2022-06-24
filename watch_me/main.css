@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Changa', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    direction: rtl;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+header .right {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+}
+
+header .right h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #00cc99;
+    text-shadow: -1px -1px 0 #0099ff;
+    margin: 0 10px;
+}
+
+header .right ul {
+    margin-top: 10px;
+}
+
+header .right ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+header .nav-bar {
+    display: none;
+}
+
+header .nav-bar button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+header .right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .left {
+    direction: ltr;
+    margin-top: 6px;
+}
+
+header .left .VPN {
+    background-image: linear-gradient(40deg , #00cc99 , #0099ff);
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 20px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+header .left button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+header .left select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .left select:focus {
+    outline: none;
+}
+
+header .left select option {
+    background-color: #222;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 5px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.posters {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url("data/bg-image/background\ watch\ me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.posters h2 {
+    color: #0099ff;
+    text-shadow: -1px -1px 0 #00cc99;
+    font-size: 6vh;
+}
+
+.posters p {
+    font-size: 3vh;
+    color: #fff;
+}
+
+.posters button {
+    background-image: linear-gradient(225deg , #00cc99 , #0099ff);
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 20px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border: none;
+    font-size: 2.5vh;
+}
+
+.posters button:focus {
+    outline: none;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.trend-films {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.trend-films .film {
+    width: 150px;
+    height: 200px;
+    background-color: #444;
+    margin: 10px;
+}
+
+.series {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.series .episode {
+    width: 150px;
+    height: 200px;
+    background-color: #444;
+    margin: 10px;
+}
+
+.tv-program {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.tv-program .tv-p {
+    width: 150px;
+    height: 200px;
+    background-color: #444;
+    margin: 10px;
+}
+
+.lives {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.lives .live {
+    width: 150px;
+    height: 200px;
+    background-color: #444;
+    margin: 10px;
+}
+
+.help {
+    text-align: center;
+}
+
+.help h4 {
+    cursor: default;
+}
+
+.help span {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.help span::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #0099ff;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 11px;
+}
+
+footer {
+    background-color: #333;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 50px 0;
+}
+
+footer {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 25px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul .social a {
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 872px) and (max-width: 1027px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .left .VPN {
+        display: none;
+    }
+}
+
+@media screen and (min-width:702px) and (max-width: 872px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 532px) and (max-width: 702px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+    .trend-films .film2 {
+        display: none;
+    }
+    .series .episode2 {
+        display: none;
+    }
+    .tv-program .tv-p2 {
+        display: none;
+    }
+    .lives .live2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:365px) and (max-width: 532px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+    .trend-films .film2 {
+        display: none;
+    }
+    .series .episode2 {
+        display: none;
+    }
+    .tv-program .tv-p2 {
+        display: none;
+    }
+    .lives .live2 {
+        display: none;
+    }
+    .trend-films .film3 {
+        display: none;
+    }
+    .series .episode3 {
+        display: none;
+    }
+    .tv-program .tv-p3 {
+        display: none;
+    }
+    .lives .live3 {
+        display: none;
+    }
+    .trend-films .film4 {
+        margin: auto;
+    }
+    .series .episode4 {
+        margin: auto;
+    }
+    .tv-program .tv-p4 {
+        margin: auto;
+    }
+    .lives .live4 {
+        margin: auto;
+    }
+    .trend-films .film5 {
+        margin: auto;
+    }
+    .series .episode5 {
+        margin: auto;
+    }
+    .tv-program .tv-p5 {
+        margin: auto;
+    }
+    .lives .live5 {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:347px) and (max-width: 365px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+    .trend-films .film2 {
+        display: none;
+    }
+    .series .episode2 {
+        display: none;
+    }
+    .tv-program .tv-p2 {
+        display: none;
+    }
+    .lives .live2 {
+        display: none;
+    }
+    .trend-films .film3 {
+        display: none;
+    }
+    .series .episode3 {
+        display: none;
+    }
+    .tv-program .tv-p3 {
+        display: none;
+    }
+    .lives .live3 {
+        display: none;
+    }
+    .trend-films .film4 {
+        display: none;
+    }
+    .series .episode4 {
+        display: none;
+    }
+    .tv-program .tv-p4 {
+        display: none;
+    }
+    .lives .live4 {
+        display: none;
+    }
+    .trend-films .film5 {
+        margin: auto;
+    }
+    .series .episode5 {
+        margin: auto;
+    }
+    .tv-program .tv-p5 {
+        margin: auto;
+    }
+    .lives .live5 {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:307px) and (max-width: 347px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .right h1 {
+        font-size: 1.2em;
+    }
+    header .nav-bar {
+        font-size: 12px;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    header .left select {
+        font-size: 10px;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+    .trend-films .film2 {
+        display: none;
+    }
+    .series .episode2 {
+        display: none;
+    }
+    .tv-program .tv-p2 {
+        display: none;
+    }
+    .lives .live2 {
+        display: none;
+    }
+    .trend-films .film3 {
+        display: none;
+    }
+    .series .episode3 {
+        display: none;
+    }
+    .tv-program .tv-p3 {
+        display: none;
+    }
+    .lives .live3 {
+        display: none;
+    }
+    .trend-films .film4 {
+        display: none;
+    }
+    .series .episode4 {
+        display: none;
+    }
+    .tv-program .tv-p4 {
+        display: none;
+    }
+    .lives .live4 {
+        display: none;
+    }
+    .trend-films .film5 {
+        margin: auto;
+    }
+    .series .episode5 {
+        margin: auto;
+    }
+    .tv-program .tv-p5 {
+        margin: auto;
+    }
+    .lives .live5 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    header .right ul li {
+        display: none;
+    }
+    header .nav-bar {
+        display: inline-block;
+        order: 1;
+        margin-right: 20px;
+    }
+    header .right {
+        width: fit-content;
+        order: 2;
+        margin-top: 15px;
+        
+    }
+    header .left {
+        width: fit-content;
+        order: 3;
+        margin-top: 15px;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0;
+    }
+    header .right h1 {
+        font-size: 1.2em;
+    }
+    header .nav-bar {
+        font-size: 12px;
+    }
+    header .left .VPN {
+        display: none;
+    }
+    header .left select {
+        font-size: 10px;
+    }
+    .trend-films .film1 {
+        display: none;
+    }
+    .series .episode1 {
+        display: none;
+    }
+    .tv-program .tv-p1 {
+        display: none;
+    }
+    .lives .live1 {
+        display: none;
+    }
+    .trend-films .film2 {
+        display: none;
+    }
+    .series .episode2 {
+        display: none;
+    }
+    .tv-program .tv-p2 {
+        display: none;
+    }
+    .lives .live2 {
+        display: none;
+    }
+    .trend-films .film3 {
+        display: none;
+    }
+    .series .episode3 {
+        display: none;
+    }
+    .tv-program .tv-p3 {
+        display: none;
+    }
+    .lives .live3 {
+        display: none;
+    }
+    .trend-films .film4 {
+        display: none;
+    }
+    .series .episode4 {
+        display: none;
+    }
+    .tv-program .tv-p4 {
+        display: none;
+    }
+    .lives .live4 {
+        display: none;
+    }
+    .trend-films .film5 {
+        margin: auto;
+    }
+    .series .episode5 {
+        margin: auto;
+    }
+    .tv-program .tv-p5 {
+        margin: auto;
+    }
+    .lives .live5 {
+        margin: auto;
+    }
+    nav li a {
+        font-size: 10px;
+    }
+}
